@@ -1,44 +1,65 @@
 body {
+  background-color: black;
+}
+
+.container {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100px 600px 100px;
-  row-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 1fr 120px;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto;
   max-width: 800px;
-  padding: 0 0;
+  overflow: hidden;
 }
 
 header,
 main,
 footer {
-  background-color: lightgray;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-family: 'RocknRoll One', sans-serif;
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: lightsalmon;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.main {
+  padding-top: 355px;
+  overflow-y: scroll;
+  background-color: rgb(215, 206, 188);
+}
+
+.footer {
+  background-color: lightsalmon;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
 
 button {
-  border-radius: 12px;
+  border-radius: 50%;
+  border: black 1px solid;
+  height: 70px;
+  width: 70px;
 }
 
-/* * {
-  box-sizing: border-box;
+i {
+  font-size: 30px;
+  align-items: center;
 }
 
-body {
-  font-family: sans-serif;
-  font-size: 112.5%;
-  line-height: 1.5;
-  margin: 0;
+.sample-box {
+  height: 200px;
+  width: 600px;
+  border: solid 1px black;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(205, 143, 119);
 }
-
-h1,
-h2,
-h3 {
-  line-height: 1.3;
-}
-
-input,
-button {
-  font-size: 1em;
-} */
