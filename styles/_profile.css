@@ -24,7 +24,6 @@ h1 {
 
 .container > main {
   grid-row: 2 / 3;
-  background-color: ;
 }
 
 .container > footer {
