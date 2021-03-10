@@ -9,8 +9,21 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0 auto;
-  max-width: 800px;
-  overflow: hidden;
+  max-height: 900px;
+  max-width: 900px;
+  grid-auto-flow: row;
+}
+
+.container > header {
+  grid-row: 1 / 2;
+}
+
+.container > main {
+  grid-row: 2 / 3;
+}
+
+.container > footer {
+  grid-row: 3 / 4;
 }
 
 header,
@@ -30,7 +43,7 @@ footer {
 }
 
 .main {
-  padding-top: 355px;
+  display: grid;
   overflow-y: scroll;
   background-color: rgb(215, 206, 188);
 }
@@ -48,18 +61,51 @@ button {
   width: 70px;
 }
 
+button:hover {
+  box-shadow: 3px 3px 5px #000000;
+}
+
 i {
   font-size: 30px;
   align-items: center;
 }
 
 .sample-box {
-  height: 200px;
-  width: 600px;
+  height: 20vh;
+  width: 50vh;
   border: solid 1px black;
-  margin: 5px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(205, 143, 119);
+  margin-bottom: 15px;
 }
+
+.relative {
+  position: relative;
+  top: -72px;
+  left: 180px;
+  color: rgb(104, 64, 16);
+}
+
+/* @media screen and (max-width: 500px) {
+  .sample-box {
+    height: 20vh;
+    width: 40vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sample-box {
+    height: 15vh;
+    width: 35vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .sample-box {
+    height: 10vh;
+    width: 30vh;
+  }
+} */
