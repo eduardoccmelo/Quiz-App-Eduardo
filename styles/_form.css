@@ -6,6 +6,10 @@ h1 {
   font-size: 2em;
 }
 
+h2 {
+  margin-top: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -16,6 +20,42 @@ h1 {
   max-height: 900px;
   max-width: 600px;
   grid-auto-flow: row;
+}
+
+.answers {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.text-area {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.form,
+.answer-header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12px;
+}
+
+.submit {
+  margin-top: 20px;
+  font-size: 1.2em;
+  border: black 1px solid;
+  border-radius: 12px;
+  height: 40px;
+  width: 100px;
+  background-color: rgb(255, 230, 200);
+}
+
+.submit:hover {
+  box-shadow: 3px 3px 5px #000000;
+  cursor: pointer;
 }
 
 .container > header {
@@ -163,7 +203,6 @@ ul {
 
 .logout:hover {
   box-shadow: 3px 3px 5px #000000;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {

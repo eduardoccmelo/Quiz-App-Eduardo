@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Question</title>
+    <link rel="stylesheet" href="styles/_form.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="container">
+    <header class="header">
+      <h1>New Question</h1>
+    </header>
+
+    <main class="main">
+      <form class="form" action="">
+        <div class="form-header">
+          <h2>Create a new question</h2>
+        </div>
+        <div class="text-area answer-header">
+          <p><label for="new-question">Type your question:</label></p>
+          <textarea
+            maxlength="50"
+            name=""
+            id="new-question"
+            cols="30"
+            rows="10"
+            placeholder="Max 50 characters..."
+          ></textarea>
+        </div>
+        <div class="answers">
+          <p>
+            <label class="answer-header" for="answers"
+              >Type the answers and select the correct one:</label
+            >
+          </p>
+          <div>
+            <input type="text" placeholder="Max 10 characters..." /><input
+              type="radio"
+            />
+          </div>
+          <div>
+            <input type="text" placeholder="Max 10 characters..." /><input
+              type="radio"
+            />
+          </div>
+          <div>
+            <input type="text" placeholder="Max 10 characters..." /><input
+              type="radio"
+            />
+          </div>
+          <div>
+            <input type="text" placeholder="Max 10 characters..." /><input
+              type="radio"
+            />
+          </div>
+        </div>
+        <div>
+          <p class="answer-header"><label for="tags">Tags</label></p>
+          <input id="tags" type="text" placeholder="Tags" />
+        </div>
+        <div>
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="button1">
+        <form action="./index.html">
+          <button class="footer-button"><i class="fas fa-home"></i></button>
+        </form>
+      </div>
+
+      <div class="button2">
+        <form action="./questions.html">
+          <button class="footer-button">
+            <i class="fas fa-question-circle"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="button3">
+        <form action="./form.html">
+          <button class="footer-button selected">
+            <i class="fas fa-plus-square"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="button4">
+        <form action="./profile.html">
+          <button class="footer-button"><i class="fas fa-user"></i></button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
