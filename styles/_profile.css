@@ -24,7 +24,6 @@ h1 {
 
 .container > main {
   grid-row: 2 / 3;
-  background-color: ;
 }
 
 .container > footer {
@@ -86,20 +85,20 @@ i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  padding: 30px 40px 10px 40px;
+  padding: 0 40px 0 40px;
+  margin-top: 10px;
 }
 
 .profile-main {
-  padding: 20px 40px 40px 40px;
+  padding: 0 40px 5px 40px;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .profile-footer {
-  padding: 40px 40px;
+  padding: 10px 40px 5px 40px;
   display: grid;
   justify-items: center;
-  padding-top: 0;
 }
 
 .logout {
@@ -119,6 +118,7 @@ img {
   border: 2px solid black;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: 30px;
 }
 
 h2 {
@@ -126,13 +126,22 @@ h2 {
 }
 
 .header-description {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 110px 10px;
   text-align: center;
   align-items: center;
   justify-items: center;
-  font-size: 1em;
+  align-content: flex-start;
+  margin-right: 30px;
+  font-size: 0.9em;
+  align-items: center;
+}
+
+span {
+  font-size: 1.7em;
+  text-decoration: underline;
 }
 
 ul {
@@ -148,4 +157,145 @@ ul {
 
 .logout:hover {
   box-shadow: 3px 3px 5px #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    font-size: 0.9em;
+  }
+  .header-description {
+    margin-right: 40px;
+    padding: 0 0 5px 0;
+    font-size: 0.9em;
+  }
+  img {
+    width: 175px;
+    height: 175px;
+    margin-left: 40px;
+  }
+  span {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .main {
+    font-size: 0.8em;
+  }
+  .header-description {
+    padding-top: 0;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    font-size: 0.8em;
+  }
+  .profile-header {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .header-description {
+    font-size: 0.8em;
+    margin-top: 0;
+  }
+  img {
+    width: 125px;
+    height: 125px;
+    margin-left: 30px;
+  }
+  span {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    font-size: 0.8em;
+  }
+  .profile-header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .header-description {
+    font-size: 0.7em;
+    margin-top: 0;
+  }
+  img {
+    width: 125px;
+    height: 125px;
+    margin-left: 35px;
+  }
+  span {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .logout {
+    height: 40px;
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main {
+    font-size: 0.8em;
+  }
+  .profile-header {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+  .header-description {
+    font-size: 0.7em;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  img {
+    width: 125px;
+    height: 125px;
+    margin-left: 5px;
+  }
+  span {
+    margin: 0;
+  }
+  .logout {
+    height: 30px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main {
+    font-size: 0.8em;
+  }
+  .profile-header {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .header-description {
+    font-size: 0.7em;
+    padding-right: 10px;
+    margin-top: 0;
+    padding-left: 10px;
+  }
+  img {
+    width: 125px;
+    height: 125px;
+    margin-left: 5px;
+  }
+  span {
+    margin: 0;
+  }
+  .logout {
+    height: 30px;
+    width: 100px;
+  }
 }
