@@ -1,4 +1,4 @@
-.page-header {
+.h1 {
   font-size: 2em;
 }
 
@@ -10,6 +10,7 @@
   width: 100vw;
   margin: 0 auto;
   max-height: 900px;
+  max-width: 600px;
   grid-auto-flow: row;
   background-color: rgb(0, 0, 0);
 }
@@ -60,6 +61,7 @@ button {
   height: 70px;
   width: 70px;
   background-color: rgb(255, 230, 200);
+  cursor: pointer;
 }
 
 button:hover {
@@ -67,7 +69,7 @@ button:hover {
 }
 
 button:active {
-  background-color: #8f610c;
+  background-color: rgb(185, 107, 76);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -165,8 +167,14 @@ button:active {
   align-content: center;
   justify-self: center;
   background-color: rgb(27, 11, 5);
+  cursor: help;
 }
 
 .question-box__answer-title {
   font-size: 0.6em;
+}
+
+.selected {
+  background-color: rgb(211, 134, 103);
+  box-shadow: 0 5px #666;
 }
