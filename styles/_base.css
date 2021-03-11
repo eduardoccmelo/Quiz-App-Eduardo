@@ -83,7 +83,7 @@ i {
 
 .sample-box {
   height: 25vh;
-  width: 50vh;
+  width: 45vh;
   border: solid 1px black;
   margin-top: 15px;
   display: flex;
@@ -152,7 +152,7 @@ a:visited {
 .option {
   border: black 1px solid;
   height: 25px;
-  width: 90px;
+  width: 85px;
   background-color: rgb(221, 166, 144);
 }
 .option:hover {
