@@ -160,14 +160,18 @@ button:active {
   background-color: rgb(189, 130, 107);
   color: rgb(189, 130, 107);
 }
+
 .question-box__answer:hover {
+  cursor: help;
+}
+
+.answerClicked {
   border: black solid 1px;
   height: 25px;
   width: 70px;
   align-content: center;
   justify-self: center;
   background-color: rgb(27, 11, 5);
-  cursor: help;
 }
 
 .question-box__answer-title {
