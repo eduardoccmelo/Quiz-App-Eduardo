@@ -19,6 +19,7 @@
   <body class="container">
     <header class="header">
       <h1>New Question</h1>
+      <button class="darkMode"><i class="fas fa-moon"></i> Dark</button>
     </header>
 
     <main class="main">
@@ -29,12 +30,13 @@
         <div class="text-area answer-header">
           <p><label for="new-question">Type your question:</label></p>
           <textarea
+          class="questionText"
             maxlength="50"
             name=""
             id="new-question"
             cols="30"
             rows="10"
-            placeholder="Max 50 characters..."
+            placeholder="Max 50 characters..." required
           ></textarea>
         </div>
         <div class="answers">
@@ -44,42 +46,43 @@
             >
           </p>
           <div>
-            <input
+            <input class="inputOption"
               maxlength="10"
               type="text"
-              placeholder="Max 10 characters..."
-            /><input type="radio" name="radio" />
+              placeholder="Max 10 characters..." required
+            /><input required class="checkedOption" type="radio" name="radio" />
           </div>
           <div>
-            <input
+            <input class="inputOption"
               maxlength="10"
               type="text"
-              placeholder="Max 10 characters..."
-            /><input type="radio" name="radio" />
+              placeholder="Max 10 characters..." required
+            /><input required class="checkedOption" type="radio" name="radio" />
           </div>
           <div>
-            <input
+            <input class="inputOption"
               maxlength="10"
               type="text"
-              placeholder="Max 10 characters..."
-            /><input type="radio" name="radio" />
+              placeholder="Max 10 characters..." required
+            /><input required class="checkedOption" type="radio" name="radio" />
           </div>
           <div>
-            <input
+            <input class="inputOption"
               maxlength="10"
               type="text"
-              placeholder="Max 10 characters..."
-            /><input type="radio" name="radio" />
+              placeholder="Max 10 characters..." required
+            /><input required class="checkedOption" type="radio" name="radio" />
           </div>
         </div>
         <div>
           <p class="answer-header"><label for="tags">Tags</label></p>
-          <input id="tags" type="text" placeholder="Tags" />
+          <input class="inputTags" id="tags" type="text" placeholder="Tags" />
         </div>
         <div>
           <button class="submit">Submit</button>
         </div>
       </form>
+
     </main>
 
     <footer class="footer">

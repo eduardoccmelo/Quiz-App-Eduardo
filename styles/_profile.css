@@ -315,22 +315,30 @@ ul {
 .darkMode {
   border: black 1px solid;
   border-radius: 12px;
-  height: 40px;
-  width: 100px;
+  height: 30px;
+  width: 60px;
   background-color: rgb(0, 0, 0);
   color: white;
-  margin-top: 20px;
   border: rgb(51, 51, 51) solid 1px;
+  justify-self: center;
+  align-self: flex-start;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fa-moon, .fa-sun{
+  font-size: 1em;
 }
 
 .lightMode {
   border: black 1px solid;
   border-radius: 12px;
-  height: 40px;
-  width: 100px;
+  height: 30px;
+  width: 60px;
   background-color: rgb(255, 230, 200);
   color: black;
-  margin-top: 20px;
+  align-self: flex-start;
 }
 
 .darkModeMain {
@@ -347,3 +355,4 @@ ul {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px rgb(85, 85, 85);
 }
+
