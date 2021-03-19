@@ -78,6 +78,7 @@ footer {
   align-items: center;
   font-family: 'RocknRoll One', sans-serif;
   text-transform: uppercase;
+  position: relative;
 }
 
 .header {

@@ -13,8 +13,14 @@ let textarea = document.querySelector("textarea");
 let inputOption = document.querySelectorAll(".inputOption");
 let inputTag = document.querySelector(".inputTags")
 let checkedOption = document.querySelectorAll(".checkedOption");
-let bookmark = document.querySelectorAll(".question-box__bookmark");
+let bookmark = document.querySelectorAll(".fa-bookmark ");
 let answerHidden = document.querySelectorAll(".question-box__answerHidden")
+
+for(let i = 0; i < bookmark.length; i++){
+    bookmark[i].addEventListener("click", () => {
+        bookmark[i].classList.toggle("question-box__bookmark-clicked")
+    });
+}
 
 for (let i = 0; i < answer.length; i++) {
   answer[i].addEventListener('click', function () {
@@ -85,8 +91,3 @@ form.addEventListener('submit', (e) => {
 // })
 
 
-for(let i = 0; i < bookmark.length; i++){
-    bookmark[i].addEventListener("click", function () {
-        bookmark[i].classList.toggle("question-box__bookmark-clicked")
-    });
-}
