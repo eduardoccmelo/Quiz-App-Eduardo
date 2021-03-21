@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Question</title>
-    <link rel="stylesheet" href="styles/_form.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
@@ -19,22 +19,24 @@
   <body class="container">
     <header class="header">
       <h1>New Question</h1>
+      <button class="darkMode"><i class="fas fa-moon"></i> Dark</button>
     </header>
 
     <main class="main">
-      <form class="form" action="">
+      <form class="form formNewQuestion" action="">
         <div class="form-header">
           <h2>Create a new question</h2>
         </div>
         <div class="text-area answer-header">
           <p><label for="new-question">Type your question:</label></p>
           <textarea
+          class="questionText"
             maxlength="50"
             name=""
             id="new-question"
             cols="30"
             rows="10"
-            placeholder="Max 50 characters..."
+            placeholder="Max 50 characters..." required
           ></textarea>
         </div>
         <div class="answers">
@@ -44,42 +46,43 @@
             >
           </p>
           <div>
-            <input
+            <input class="inputOption"
               maxlength="10"
               type="text"
-              placeholder="Max 10 characters..."
-            /><input type="radio" name="radio" />
+              placeholder="Max 10 characters..." required
+            /><input required class="checkedOption" type="radio" name="radio" />
           </div>
           <div>
-            <input
+            <input class="inputOption"
               maxlength="10"
               type="text"
-              placeholder="Max 10 characters..."
-            /><input type="radio" name="radio" />
+              placeholder="Max 10 characters..." required
+            /><input required class="checkedOption" type="radio" name="radio" />
           </div>
           <div>
-            <input
+            <input class="inputOption"
               maxlength="10"
               type="text"
-              placeholder="Max 10 characters..."
-            /><input type="radio" name="radio" />
+              placeholder="Max 10 characters..." required
+            /><input required class="checkedOption" type="radio" name="radio" />
           </div>
           <div>
-            <input
+            <input class="inputOption"
               maxlength="10"
               type="text"
-              placeholder="Max 10 characters..."
-            /><input type="radio" name="radio" />
+              placeholder="Max 10 characters..." required
+            /><input required class="checkedOption" type="radio" name="radio" />
           </div>
         </div>
         <div>
           <p class="answer-header"><label for="tags">Tags</label></p>
-          <input id="tags" type="text" placeholder="Tags" />
+          <input class="inputTags" id="tags" type="text" placeholder="Tags" />
         </div>
         <div>
           <button class="submit">Submit</button>
         </div>
       </form>
+
     </main>
 
     <footer class="footer">
@@ -111,5 +114,6 @@
         </form>
       </div>
     </footer>
+    <script src="./scripts/form.js"></script>
   </body>
 </html>
