@@ -40,7 +40,7 @@ h2 {
   display: grid;
   align-items: center;
   justify-items: center;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .submit {
@@ -206,146 +206,34 @@ ul {
   box-shadow: 3px 3px 5px #000000;
 }
 
-@media screen and (max-width: 600px) {
-  .main {
+@media screen and (max-width: 560px) {
+  h2{
+    font-size: 1.2em;
+  }
+  .answer-header {
     font-size: 0.9em;
   }
-  .header-description {
-    margin-right: 40px;
-    padding: 0 0 5px 0;
-    font-size: 0.9em;
+}
+
+@media screen and (max-width: 460px) {
+  h2{
+    font-size: 1.1em;
   }
-  img {
-    width: 175px;
-    height: 175px;
-    margin-left: 40px;
-  }
-  span {
-    font-size: 1.6em;
+  .answer-header {
+    font-size: 0.8em;
   }
 }
 
-@media screen and (max-width: 530px) {
-  .main {
-    font-size: 0.8em;
+@media screen and (max-width: 380px) {
+  h2{
+    font-size: 1em;
   }
-  .header-description {
-    padding-top: 0;
-    font-size: 0.9em;
-    margin-top: 20px;
-    margin-right: 40px;
-  }
-  img {
-    width: 150px;
-    height: 150px;
-    margin-left: 40px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .main {
-    font-size: 0.8em;
-  }
-  .profile-header {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-  .header-description {
-    font-size: 0.8em;
-    margin-top: 0;
-  }
-  img {
-    width: 125px;
-    height: 125px;
-    margin-left: 30px;
-  }
-  span {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .main {
-    font-size: 0.8em;
-  }
-  .profile-header {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .header-description {
+  .answer-header {
     font-size: 0.7em;
-    margin-top: 0;
-  }
-  img {
-    width: 125px;
-    height: 125px;
-    margin-left: 35px;
-  }
-  span {
-    margin: 0;
-    font-size: 1.3em;
-  }
-  .logout {
-    height: 40px;
-    width: 110px;
   }
 }
 
-@media screen and (max-width: 420px) {
-  .main {
-    font-size: 0.8em;
-  }
-  .profile-header {
-    padding-right: 45px;
-    padding-left: 45px;
-  }
-  .header-description {
-    font-size: 0.7em;
-    margin-right: 5px;
-    margin-top: 0;
-    margin-left: 5px;
-  }
-  img {
-    width: 125px;
-    height: 125px;
-    margin-left: 5px;
-  }
-  span {
-    margin: 0;
-  }
-  .logout {
-    height: 30px;
-    width: 100px;
-  }
-}
 
-@media screen and (max-width: 350px) {
-  .main {
-    font-size: 0.8em;
-  }
-  .profile-header {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .header-description {
-    font-size: 0.7em;
-    padding-right: 10px;
-    margin-top: 0;
-    padding-left: 10px;
-  }
-  img {
-    width: 125px;
-    height: 125px;
-    margin-left: 5px;
-  }
-  span {
-    margin: 0;
-  }
-  .logout {
-    height: 30px;
-    width: 100px;
-  }
-}
 
 .darkMode {
   border: black 1px solid;
