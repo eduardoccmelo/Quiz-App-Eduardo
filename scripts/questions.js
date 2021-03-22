@@ -43,6 +43,7 @@ for (let i = 0; i < answer.length; i++) {
     }
   })
 
+  
 for(let correctAnswer of answerHidden){
   // alert(correctAnswer.textContent)
   for(let i = 0; i < option.length; i++){
