@@ -109,7 +109,6 @@ button:active {
 }
 
 .question-box__bookmark:hover {
-  color: rgb(3, 49, 13);
   scale: 1.1;
   cursor: pointer;
 }
