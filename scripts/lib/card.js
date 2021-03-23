@@ -67,7 +67,9 @@ export function createCard(cardsData){
     bookmark.classList.add("fa-bookmark");
     bookmark.classList.add("question-box__bookmark");
     questionBox.append(bookmark);
-
+    if(cardsData.isBookmarked === true){
+        bookmark.classList.add("question-box__bookmark-clicked")
+    }
     bookmark.addEventListener("click", ()=>{
         bookmark.classList.toggle("question-box__bookmark-clicked")
     })
