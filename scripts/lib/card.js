@@ -55,8 +55,10 @@ export function createCard(cardsData){
         questionBoxFooter.append(options);
         options.addEventListener("click", ()=>{
             if(options.textContent == answerHidden.textContent){
-                options.classList.toggle("optionClicked")
-              } 
+                options.classList.add("optionClicked")
+              } else{
+                  options.style.backgroundColor = "red"
+              }
         })
     }
 
