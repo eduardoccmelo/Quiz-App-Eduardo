@@ -16,8 +16,12 @@ export function createCard(cardsData){
 
     const h2 = document.createElement("h2");
     h2.classList.add("question-box__title");
-    h2.textContent = `Question ${cardsData.id + 1}:`
+    h2.textContent = "Question about"
     questionBoxContentHeader.append(h2);
+
+    const tag = document.createElement("span");
+    tag.textContent = ` "${cardsData.tag}"`
+    h2.append(tag)
 
     const questionBoxQuestion = document.createElement("div");
     questionBoxQuestion.classList.add("question-box__question");
@@ -57,7 +61,8 @@ export function createCard(cardsData){
             if(options.textContent == answerHidden.textContent){
                 options.classList.add("optionClicked")
               } else{
-                  options.style.backgroundColor = "red"
+                  options.style.backgroundColor = "red";
+                  options.style.color = "white";
               }
         })
     }
