@@ -1,10 +1,12 @@
 
-import { cardsData } from "./lib/db.js";
+import { getCards } from "./lib/db.js";
 import { createCard } from "./lib/card.js";
 
 const content = document.querySelector(".page-main");
 
-for(let i = 0; i < cardsData.length; i++){
-    const cardSection = createCard(cardsData[i]);
+const data = getCards();
+
+for(let i = 0; i < data.length; i++){
+    const cardSection = createCard(data[i]);
     content.append(cardSection);
 }

@@ -1,3 +1,5 @@
+import { pushCard } from "./lib/db.js";
+
 let submit = document.querySelector('.submit');
 let form = document.querySelector('.form');
 let darkMode = document.querySelector('.darkMode');
@@ -29,25 +31,40 @@ darkMode.addEventListener('click', () => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log("Your new question is:");
-    console.log("---------------------");
-    console.log(textarea.value);
-    console.log("---------------------");
-    for(let i = 0; i < inputOption.length; i++){
-        console.log(`Option${i + 1}: ${inputOption[i].value}`);
-    }
-    console.log("---------------------");
-    for(let i = 0; i < checkedOption.length; i++){
-        if(checkedOption[i].checked === true){
-            console.log(`Correct answer: Option #${i + 1}`);
-        } 
-    }
-    console.log("---------------------");
-    if(inputTag.value === ""){
-        console.log("No Tags");
-    } else{
-        console.log(inputTag.value);
-    }
 
-    form.reset()
+  const newQuestion = textarea.value;
+  const tag = inputTag.value;
+
+  const option1 = form.option1.value;
+  const option2 = form.option2.value;
+  const option3 = form.option3.value;
+  const option4 = form.option4.value;
+
+  const options = [
+    option1,
+    option2,
+    option3,
+    option4
+  ]
+
+  let correctAnswer;
+  const correctAnswerRadios = form["correct-answer"];
+  for(let i = 0; i < correctAnswerRadios.length; i++){
+    if(correctAnswerRadios[i].checked){
+      correctAnswer = options[i]
+    }
+  }
+
+  pushCard({
+    question: newQuestion,
+    tag: tag,
+    isBookmarked: false,
+    options,
+    answer: correctAnswer
+  })
+
+  alert("New question created!")
+
+  form.reset()
 })
+

@@ -46,37 +46,37 @@
             >
           </p>
           <div>
-            <input class="inputOption"
+            <input name="option1"  id="option1" class="inputOption"
               maxlength="10"
               type="text"
               placeholder="Max 10 characters..." required
-            /><input required class="checkedOption" type="radio" name="radio" />
+            /><input required class="checkedOption" type="radio" name="correct-answer" />
           </div>
           <div>
-            <input class="inputOption"
+            <input name="option2" id="option2"  class="inputOption"
               maxlength="10"
               type="text"
               placeholder="Max 10 characters..." required
-            /><input required class="checkedOption" type="radio" name="radio" />
+            /><input required class="checkedOption" type="radio" name="correct-answer" />
           </div>
           <div>
-            <input class="inputOption"
+            <input name="option3" id="option3"  class="inputOption"
               maxlength="10"
               type="text"
               placeholder="Max 10 characters..." required
-            /><input required class="checkedOption" type="radio" name="radio" />
+            /><input required class="checkedOption" type="radio" name="correct-answer" />
           </div>
           <div>
-            <input class="inputOption"
+            <input name="option4" id="option4"  class="inputOption"
               maxlength="10"
               type="text"
               placeholder="Max 10 characters..." required
-            /><input required class="checkedOption" type="radio" name="radio" />
+            /><input required class="checkedOption" type="radio" name="correct-answer" />
           </div>
         </div>
         <div>
-          <p class="answer-header"><label for="tags">Tags</label></p>
-          <input class="inputTags" id="tags" type="text" placeholder="Tags" />
+          <p class="answer-header"><label for="tags">Type a subject:</label></p>
+          <input class="inputTags" id="tags" type="text" placeholder="Max 10 characters..." required />
         </div>
         <div>
           <button class="submit">Submit</button>
@@ -114,6 +114,6 @@
         </form>
       </div>
     </footer>
-    <script src="./scripts/form.js"></script>
+    <script src="./scripts/form.js" type="module"></script>
   </body>
 </html>

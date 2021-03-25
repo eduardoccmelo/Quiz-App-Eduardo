@@ -285,7 +285,7 @@ button:active {
 @media screen and (max-width: 750px) {
   .page-main-content__question-box {
     height: 240px;
-    width: 480px;
+    width: 500px;
   }
   .question-box__option{
     width: 90px;
@@ -293,6 +293,9 @@ button:active {
 }
 
 @media screen and (max-width: 600px) {
+  .page-main-content__question-box-content__header{
+    font-size: 0.9em;
+  }
   .page-main-content__question-box {
     height: 240px;
     width: 450px;
@@ -303,8 +306,11 @@ button:active {
 }
 
 @media screen and (max-width: 470px) {
+  .page-main-content__question-box-content__header{
+    font-size: 0.8em;
+  }
   .page-main-content__question-box {
-    height: 200px;
+    height: 220px;
     width: 380px;
     font-size: 0.9em;
   }
@@ -314,9 +320,12 @@ button:active {
 }
 
 @media screen and (max-width: 400px) {
+  .page-main-content__question-box-content__header{
+    font-size: 0.8em;
+  }
   .page-main-content__question-box {
-    height: 200px;
-    width: 320px;
+    height: 220px;
+    width: 340px;
     font-size: 0.8em;
   }
   .question-box__option{
@@ -326,7 +335,7 @@ button:active {
 
 @media screen and (max-width: 350px) {
   .page-main-content__question-box {
-    height: 200px;
+    height: 220px;
     width: 290px;
     font-size: 0.75em;
   }
